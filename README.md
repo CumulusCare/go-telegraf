@@ -25,7 +25,7 @@ import (
 )
 
 func main() {
-	client, err := telegraf.NewTCP("127.0.0.1:8094")
+	client, err := telegraf.NewTCP("127.0.0.1:8095")
 	if err != nil {
 		log.Fatal("could not connect:", err)
 	}

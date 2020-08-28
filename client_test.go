@@ -7,7 +7,7 @@ import (
 )
 
 func BenchmarkUDPWriteRaw(b *testing.B) {
-	conn, err := net.Dial("udp", "127.0.0.1:8094")
+	conn, err := net.Dial("tcp", "127.0.0.1:8095")
 	if err != nil {
 		b.Fatalf("failed to connect: %s", err)
 	}

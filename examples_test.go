@@ -4,7 +4,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/com:CumulusCare/go-telegraf"
+	"github.com/CumulusCare/go-telegraf"
 )
 
 func ExampleClient() {

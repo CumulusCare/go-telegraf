@@ -1,14 +1,15 @@
 # go-telegraf
 
-[![Build Status](https://travis-ci.org/mdaffin/go-telegraf.svg?branch=master)](https://travis-ci.org/mdaffin/go-telegraf)
-[![Build Status](https://godoc.org/github.com/mdaffin/go-telegraf?status.svg)](https://godoc.org/github.com/mdaffin/go-telegraf)
+[Doc](https://godoc.org/github.com/mdaffin/go-telegraf)
+[Source Repo](https://github.com/mdaffin/go-telegraf)
+[License](https://github.com/mdaffin/go-telegraf/blob/master/LICENSE)
 
 A golang library to write metrics to telegraf.
 
 ## Installation
 
 ```
-go get -u "github.com/mdaffin/go-telegraf"
+go get -u "github.com/CumulusCare/go-telegraf"
 ```
 
 ## Example
@@ -20,11 +21,11 @@ import (
 	"log"
 	"time"
 
-	"github.com/mdaffin/go-telegraf"
+	"github.com/CumulusCare/go-telegraf"
 )
 
 func main() {
-	client, err := telegraf.NewTCP("127.0.0.1:8094")
+	client, err := telegraf.NewTCP("127.0.0.1:8095")
 	if err != nil {
 		log.Fatal("could not connect:", err)
 	}
